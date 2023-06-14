@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+/******** 🚀폰트 연결 ********/
+@font-face {
+    font-family: 'S-Core Dream';
+    src: url('S-CoreDream-6Bold.eot');
+    src: url('S-CoreDream-6Bold.eot?#iefix') format('embedded-opentype'),
+        url('S-CoreDream-6Bold.woff2') format('woff2'),
+        url('S-CoreDream-6Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'S-Core Dream';
+    src: url('S-CoreDream-5Medium.eot');
+    src: url('S-CoreDream-5Medium.eot?#iefix') format('embedded-opentype'),
+        url('S-CoreDream-5Medium.woff2') format('woff2'),
+        url('S-CoreDream-5Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'S-Core Dream';
+    src: url('S-CoreDream-4Regular.eot');
+    src: url('S-CoreDream-4Regular.eot?#iefix') format('embedded-opentype'),
+        url('S-CoreDream-4Regular.woff2') format('woff2'),
+        url('S-CoreDream-4Regular.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'S-Core Dream';
+    src: url('S-CoreDream-7ExtraBold.eot');
+    src: url('S-CoreDream-7ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('S-CoreDream-7ExtraBold.woff2') format('woff2'),
+        url('S-CoreDream-7ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'S-Core Dream';
+    src: url('S-CoreDream-3Light.eot');
+    src: url('S-CoreDream-3Light.eot?#iefix') format('embedded-opentype'),
+        url('S-CoreDream-3Light.woff2') format('woff2'),
+        url('S-CoreDream-3Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/******** 🚀초기값 ********/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    color: #333;
+    line-height: 1;
+    font-family: 'S-Core Dream';
+    font-size: 1.8rem;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+
+
+.tablet {
+    display: none;
+}
+/* .inner */
+
+/******** 🚀header ********/
+    header {
+        height: 100px;
+        background-color: #181823;
+        color: #fff;
+    }
+    header .inner {
+        height: 100%;
+        max-width: 1440px;
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .inner h1 {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        
+    }
+    header .inner h1 a {
+        font-size: 24px;
+        line-height: 1;
+    }
+    header .inner .pc .pc_gnb .depth01 {
+        position: relative;
+        display: inline-block;
+        padding: 0 50px;
+        vertical-align: top;
+        z-index: 9;
+    }
+    header .inner .pc .pc_gnb .depth01 .depth02 {
+        padding: 50px 0;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        display: none;
+        
+    }
+    header .inner .pc .pc_gnb .depth01 .depth02 li {
+        margin-bottom: 30px;
+    }
+
+    header .inner .pc .pc_gnb:hover .depth01 .depth02 {
+        display: block;
+    }
+    header .inner .pc .pc_gnb::before {
+        content: '';
+        width: 100%;
+        height: 500px;
+        background-color: #18182398;
+        display: block;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        display: none;
+        z-index: 8;
+    }
+    header .inner .pc .pc_gnb:hover::before {
+        display: block;
+    }
+    header .inner .pc .pc_gnb .depth01:hover .depth02 {
+        
+        background-color: #FF5331;
+    }
+    header .inner > a {
+        height: 30px;
+    }
+    header .inner > a img {
+        height: 100%;
+    }
+
+    @media all and (max-width: 1024px) {
+        .pc{display: none;}
+        header .inner > a img {display: none;}
+        .tablet {display: block;}
+
+        header .inner .t_gnb {
+            display: none;
+
+            width: 80%;
+            height: 100vh;
+            position: fixed;
+            right: 0;
+            top: 0;
+            padding: 50px;
+            background-color: #18182398;
+            
+        }
+        header .inner .t_gnb .close {
+            display: flex;
+            justify-content: flex-end;
+        }
+        header .inner .t_gnb ul li {
+            padding: 30px 0;
+        }
+        
+    }
+    /******** 🚀footer ********/
+    footer {
+        height: 45vh;
+        background-color: #181823;
+        color: #fff;
+       
+    }
+    footer .inner {
+        max-width: 1440px;
+        width: 95%;
+        margin: 0 auto;
+        padding: 10rem 0;
+        
+    }
+    footer .inner span {
+       font-size: 1.5rem;
+       margin: 0 3.3rem 3rem 0;
+       display: inline-block;
+       font-weight: bold;
+    }
+    footer .inner > span:first-child {
+        color: #FED324;
+    }
+    footer .inner ul {
+        padding: 3rem 0;
+    }
+    footer .inner ul li {
+        display: inline-block;
+        font-size: 1.5rem;
+    }
+    footer .inner ul li span {
+       margin: 0 2rem;
+       
+    }
+    footer .inner p {
+        color: #d8d8d8;
+        font-size: 1.4rem;
+        padding: 3rem 0;
+        border-top: 1px solid #d8d8d8;
+        margin-top: 0.5rem;
+    }

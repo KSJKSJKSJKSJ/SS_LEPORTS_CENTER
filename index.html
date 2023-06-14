@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>samsung leports</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="css/main.css" rel="stylesheet" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+
+<script>
+    window.onload = function () {
+        //메뉴
+        let menuOpen = document.getElementsByClassName('open')[0];
+        let menuClose = document.getElementsByClassName('close')[0];
+        let hdMenu = document.getElementsByClassName('t_gnb')[0];
+
+        hdMenu.style.display = 'none';
+
+        menuOpen.onclick = function () {
+            if (hdMenu.style.display == 'none') {
+                hdMenu.style.display = 'block'
+            }
+        }
+        menuClose.onclick = function () {
+            if (hdMenu.style.display == 'block') {
+                hdMenu.style.display = 'none'
+            }
+        }
+
+        //스와이퍼
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            centeredSlides: true,
+            spaceBetween: 30,
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+    }
+</script>
+
+<body>
+    <header>
+        <div class="inner">
+            <h1>
+                <a href="#">SAMSUNG <br />
+                    LEPORTS CENTER</a>
+            </h1>
+            <nav class="pc">
+                <ul class="pc_gnb">
+                    <li class="depth01">
+                        <a href="#">회사소개</a>
+                        <ul class="depth02">
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">오시는길</a></li>
+                            <li><a href="#">센터갤러리</a></li>
+                            <li><a href="#">SNS</a></li>
+                        </ul><!-- .depth02 end -->
+                    </li><!-- .depth01 end -->
+                    <li class="depth01">
+                        <a href="#">스포츠센터</a>
+
+                        <ul class="depth02">
+                            <li><a href="#">NEWS</a></li>
+                            <li><a href="#">MEMBERSHIP</a></li>
+                            <li><a href="#">GOLF</a></li>
+                            <li><a href="#">FITNESS</a></li>
+                            <li><a href="#">M.P.G</a></li>
+                            <li><a href="#">AQUATICS</a></li>
+                            <li><a href="#">TBCS</a></li>
+                        </ul><!-- .depth02 end -->
+                    </li><!-- .depth01 end -->
+
+                    <li class="depth01">
+                        <a href="#">문화센터</a>
+
+                        <ul class="depth02">
+                            <li><a href="#">새소식</a></li>
+                            <li><a href="#">추천강좌</a></li>
+                            <li><a href="#">신설강좌</a></li>
+                            <li><a href="#">성인강좌</a></li>
+                            <li><a href="#">청소년강좌</a></li>
+                            <li><a href="#">유아/어린이강좌</a></li>
+                            <li><a href="#">영아강좌</a></li>
+                            <li><a href="#">단기특강</a></li>
+                        </ul><!-- .depth02 end -->
+                    </li><!-- .depth01 end -->
+
+                    <li class="depth01">
+                        <a href="#">이용안내</a>
+
+                        <ul class="depth02">
+                            <li><a href="#">센터 캘린더</a></li>
+                            <li><a href="#">스포츠센터</a></li>
+                            <li><a href="#">문화센터</a></li>
+                            <li><a href="#">시설투어</a></li>
+                            <li><a href="#">부대시설</a></li>
+                            <li><a href="#">온라인 브로슈어</a></li>
+                        </ul><!-- .depth02 end -->
+                    </li><!-- .depth01 end -->
+
+                    <li class="depth01">
+                        <a href="#">회원센터</a>
+
+                        <ul class="depth02">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Q&A</a></li>
+                            <li><a href="#">고객소리함</a></li>
+                            <li><a href="#">영업장별 연락처</a></li>
+                        </ul><!-- .depth02 end -->
+                    </li><!-- .depth01 end -->
+                </ul><!-- .pc_gnb end -->
+
+            </nav><!-- .pc end -->
+            <a href="#">
+                <img src="img/icon _person_.png" alt="마이페이지" />
+            </a>
+            <span class="tablet open">메뉴보기</span>
+            <nav class="tablet t_gnb">
+                <span class="close">메뉴닫기</span>
+                <ul>
+                    <li class="depth01">
+                        <a href="#">회사소개</a>
+
+                        <ul class="depth02">
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">오시는길</a></li>
+                            <li><a href="#">센터갤러리</a></li>
+                            <li><a href="#">SNS</a></li>
+                        </ul><!-- .depth02 end -->
+                    </li><!-- .depth01 end -->
+
+                    <li class="depth01">
+                        <a href="#">스포츠센터</a>
+
+                        <ul class="depth02">
+                            <li><a href="#">NEWS</a></li>
+                            <li><a href="#">MEMBERSHIP</a></li>
+                            <li><a href="#">GOLF</a></li>
+                            <li><a href="#">FITNESS</a></li>
+                            <li><a href="#">M.P.G</a></li>
+                            <li><a href="#">AQUATICS</a></li>
+                            <li><a href="#">TBCS</a></li>
+                        </ul><!-- .depth02 end -->
+                    </li><!-- .depth01 end -->
+
+                    <li class="depth01">
+                        <a href="#">문화센터</a>
+
+                        <ul class="depth02">
+                            <li><a href="#">새소식</a></li>
+                            <li><a href="#">추천강좌</a></li>
+                            <li><a href="#">신설강좌</a></li>
+                            <li><a href="#">성인강좌</a></li>
+                            <li><a href="#">청소년강좌</a></li>
+                            <li><a href="#">유아/어린이강좌</a></li>
+                            <li><a href="#">영아강좌</a></li>
+                            <li><a href="#">단기특강</a></li>
+                        </ul><!-- .depth02 end -->
+                    </li><!-- .depth01 end -->
+
+                    <li class="depth01">
+                        <a href="#">이용안내</a>
+
+                        <ul class="depth02">
+                            <li><a href="#">센터 캘린더</a></li>
+                            <li><a href="#">스포츠센터</a></li>
+                            <li><a href="#">문화센터</a></li>
+                            <li><a href="#">시설투어</a></li>
+                            <li><a href="#">부대시설</a></li>
+                            <li><a href="#">온라인 브로슈어</a></li>
+                        </ul><!-- .depth02 end -->
+                    </li><!-- .depth01 end -->
+
+                    <li class="depth01">
+                        <a href="#">회원센터</a>
+
+                        <ul class="depth02">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Q&A</a></li>
+                            <li><a href="#">고객소리함</a></li>
+                            <li><a href="#">영업장별 연락처</a></li>
+                        </ul><!-- .depth02 end -->
+                    </li><!-- .depth01 end -->
+
+                </ul>
+            </nav><!-- .t_gnb end -->
+        </div><!-- .inner end -->
+    </header>
+
+    <section class="main_visual">
+        <div class="inner">
+            <figure>
+                <img src="img/main_vi_img.png" alt="" />
+            </figure>
+            <div class="title">
+                <p>SAMSUNG</P>
+                <p>LEPORTS CENTER</p>
+            </div><!-- .title end -->
+        </div><!-- .inner end -->
+
+    </section><!-- .main_visual end -->
+
+    <div class="bg">
+        <p> #SAMSUNG LEPORTS CENTER <span>#SAMSUNG LEPORTS CENTER</span> #SAMSUNG LEPORTS CENTER <span>#SAMSUNG LEPORTS
+                CENTER</span> #SAMSUNG LEPORTS CENTER <span> #SAMSUNG LEPORTS CENTER</span> #SAMSUNG LEPORTS CENTER
+            <span> #SAMSUNG LEPORTS CENTER</span>
+        </p>
+        <p> <span>#SAMSUNG LEPORTS CENTER</span> #SAMSUNG LEPORTS CENTER <span>#SAMSUNG LEPORTS CENTER</span> #SAMSUNG
+            LEPORTS CENTER <span>#SAMSUNG LEPORTS CENTER</span> #SAMSUNG LEPORTS CENTER <span>#SAMSUNG LEPORTS
+                CENTER</span> #SAMSUNG LEPORTS CENTER
+        </p>
+        <p> #SAMSUNG LEPORTS CENTER <span>#SAMSUNG LEPORTS CENTER</span> #SAMSUNG LEPORTS CENTER <span>#SAMSUNG LEPORTS
+                CENTER</span> #SAMSUNG LEPORTS CENTER <span> #SAMSUNG LEPORTS CENTER</span> #SAMSUNG LEPORTS CENTER
+            <span> #SAMSUNG LEPORTS CENTER</span>
+        </p>
+        <p> <span>#SAMSUNG LEPORTS CENTER</span> #SAMSUNG LEPORTS CENTER <span>#SAMSUNG LEPORTS CENTER</span> #SAMSUNG
+            LEPORTS CENTER <span>#SAMSUNG LEPORTS CENTER</span> #SAMSUNG LEPORTS CENTER <span>#SAMSUNG LEPORTS
+                WCENTER</span> #SAMSUNG LEPORTS CENTER
+        </p>
+    </div><!-- .bg end -->
+
+    <section class="cont01">
+        <div class="inner">
+            <figure>
+                <img src="img/cont01_img.jpg" alt="" />
+            </figure>
+            <div class="inner2">
+                <div class="notice">
+                    <h3>NEWS</h3>
+                    <ul class="headline">
+                        <li>
+                            <span class="date">
+                                <strong>25</strong>
+                                <small>2023.04</small>
+                            </span>
+                            <a href="#">[스포츠센터] TBCS 내몸에 맞는 운동법을 제안해드립니다.</a>
+                        </li>
+                        <li>
+                            <span class="date">
+                                <strong>25</strong>
+                                <small>2023.04</small>
+                            </span>
+                            <a href="#">[스포츠센터] TBCS Foot Exercise</a>
+                        </li>
+                    </ul><!-- .headline end -->
+                    <ul class="list">
+                        <li>
+                            <a href="#">[스포츠센터] TBCS 바디워크 주니어</a>
+                            <span class="date">2023-04-25</span>
+                        </li>
+                        <li>
+                            <a href="#">[문화센터] [신설] 찰리의 힐링 어반스케치</a>
+                            <span class="date">23-04-14</span>
+                        </li>
+                        <li>
+                            <a href="#">[문화센터] [신설] 키즈 플레이골프</a>
+                            <span class="date">23-04-14</span>
+                        </li>
+                        <li>
+                            <a href="#">[문화센터] [신설] 뎃생&수채화 어린이,청소년 클래스</a>
+                            <span class="date">23-04-14</span>
+                        </li>
+                        <li>
+                            <a href="#">[스포츠센터] 골프장 공사 안내</a>
+                            <span class="date">23-04-10</span>
+                        </li>
+                    </ul><!-- .list end -->
+                </div><!-- .notice end -->
+
+                <div class="picks">
+                    <h3>추천강좌</h3>
+                    <div class="boxwrap">
+                        <div class="box box1">
+                            <h4>토요 음악줄넘기(9세 이상)</h4>
+                            <p>기간: 23-03-04 ~ 23-05-20</p>
+                            <span>더보기</span>
+                        </div>
+                        <div class="box box2">
+                            <h4>[4월개강]1:4 프리미엄 소수정예 드럼교실</h4>
+                            <p>기간: 23-04-05 ~ 23-05-31</p>
+                            <span>더보기</span>
+                        </div>
+                    </div><!-- .boxwrap end -->
+                </div><!-- .picks end -->
+            </div><!-- .inner2 end -->
+
+        </div><!-- .inner end -->
+    </section><!-- .cont01 end -->
+
+    <section class="cont02">
+        <dic class="inner">
+            <div class="program">
+                <h3 class="cont02_title">
+                    <span>스포츠센터</span>
+                    프로그램안내
+                </h3><!-- .cont02_title -->
+                <p>쾌적한 운동 환경, 과학적 구성의 프로그램, 호텔수준의 <br />
+                    맞춤 서비스로 운영되고 있습니다.</p>
+                <div class="btn">
+                    <a href="#">자세히보기</a>
+                </div><!-- .btn end -->
+            </div><!-- .program end -->
+            <div class="program_item">
+                <div class="item_img">
+                    <figure>
+                        <img src="img/cont02_img01.jpg" alt="" />
+                    </figure>
+                    <!-- <h4>MEMBERSHIP</h4> -->
+                </div>
+                <div class="item_img">
+                    <figure>
+                        <img src="img/cont02_img02.jpg" alt="" />
+                    </figure>
+                    <!-- <h4>MEMBERSHIP</h4> -->
+                </div>
+                <div class="item_img">
+                    <figure>
+                        <img src="img/cont02_img03.jpg" alt="" />
+                    </figure>
+                    <!-- <h4>MEMBERSHIP</h4> -->
+                </div>
+                <div class="item_img">
+                    <figure>
+                        <img src="img/cont02_img04.jpg" alt="" />
+                    </figure>
+                    <!-- <h4>MEMBERSHIP</h4> -->
+                </div>
+                <div class="item_img">
+                    <figure>
+                        <img src="img/cont02_img05.jpg" alt="" />
+                    </figure>
+                    <!-- <h4>MEMBERSHIP</h4> -->
+                </div>
+                <div class="item_img">
+                    <figure>
+                        <img src="img/cont02_img06.jpg" alt="" />
+                    </figure>
+                    <!-- <h4>MEMBERSHIP</h4> -->
+                </div>
+            </div><!-- .program_item end -->
+        </dic><!-- .inner end -->
+    </section><!-- .cont02 end -->
+
+    <div class="text">
+        <h2>WORLD <span>BEST</span></h2>
+        <h2>LEPORTS <span>CENTER</span></h2>
+    </div><!-- .text end -->
+
+
+    <!-- swiperjs.com/demos -->
+    <!-- Grab cursor -->
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div>
+                    <h4>Contact information</h4>
+                    <p>삼성스포츠센터 영업장별 연락처입니다.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <h4>Hours of use</h4>
+                    <p>스포츠센터의 이용 안내입니다.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <h4>Online brochure</h4>
+                    <p>문화센터·스포츠센터의 서비스 이용 안내 책자입니다.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <h4>Directions</h4>
+                    <p>삼성스포츠센터 찾아 오시는 길입니다.</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <footer>
+        <div class="inner">
+            <span><a href=#>개인정보처리방침</a></span>
+            <span><a href=#>영상정보처리기기운영방침</a></span>
+            <span><a href=#>이메일주소무단집단거부</a></span>
+            <ul>
+                <li>
+                    (주)삼성라이온즈레포츠센터
+                    <span>|</span>
+                </li>
+                <li>
+                    대표자 : 유정근
+                    <span>|</span>
+                </li>
+                <li>
+                    사업자번호 : 214-85-07064
+                    <span>|</span>
+                </li>
+                <li>
+                    주소 : 서울특별시 서초구 서초대로 64길 76-21
+                </li> <br />
+                <li>
+                    대표번호: (02)3470-0500
+                    <span>|</span>
+                </li>
+                <li>
+                    통신판매 신고번호:2014-서울서초-0669호
+                </li>
+            </ul>
+            <p>Copyright(C) 2007 SAMSUNG LEPORTS CENTER ALL RIGHTS RESERUED.</p>
+        </div><!-- .inner end -->
+    </footer>
+</body>
+
+
+</html>
